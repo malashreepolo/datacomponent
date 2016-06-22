@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.connection.url">jdbc:mysql://192.168.1.10:3306/malashree</property>
+   <property name="hibernate.connection.username">root</property>
+   <property name="hibernate.connection.password">1234</property>
+   <property name="connection.pool_size">200</property>
+   <property name="hibernate.hbm2ddl.auto">update</property>
+   <property name="show_sql">true</property>
+    
+ <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Customer"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Employee"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Location"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Company"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Contact"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Mobile"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Ecommerce"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Card"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Cash"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Cheque"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Individual"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Payment"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.PaymentReason"/>
+   <mapping class="com.vdinnosoft.rtet.datacomponent.entity.Refund"/>
+     
+</session-factory>
+</hibernate-configuration>
