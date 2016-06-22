@@ -41,6 +41,7 @@ public class ChequeDAOImpl implements PaymentOption {
 			chqImpl.addCheque(cheque);
 			chqImpl.addCheque(cheque);
 			chqImpl.addCheque(cheque);
+			System.out.println(" =======HELLO MALASHREE =======");
 			
 			System.out.println(" =======READ =======");
 			Set<Cheque> chq1 =chqImpl.getCheque();
