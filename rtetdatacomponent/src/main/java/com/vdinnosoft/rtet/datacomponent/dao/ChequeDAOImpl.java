@@ -37,6 +37,7 @@ public class ChequeDAOImpl implements PaymentOption {
 		  
 		  
 			System.out.println(" =======CREATE =======");
+			System.out.println(" =======CREATE TABLE =======");
 			chqImpl.addCheque(cheque);
 			chqImpl.addCheque(cheque);
 			chqImpl.addCheque(cheque);
